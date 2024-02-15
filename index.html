@@ -12,37 +12,71 @@
   <header>
     <h1>Weather Dashboard</h1>
   </header>
-  <section class="search-pane">
-    <h2>Search for a City</h2>
-    <input type="textarea" placeholder="San Diego">
-    <button class="search-button">Search</button>
-    <button class="state-preset">Atlanta</button>
-    <button class="state-preset">Denver</button>
-    <button class="state-preset">Seattle</button>
-    <button class="state-preset">San Francisco</button>
-    <button class="state-preset">Orlando</button>
-    <button class="state-preset">New York</button>
-    <button class="state-preset">Chicago</button>
-    <button class="state-preset">Austin</button>
-  </section>
-  <section class="forecast-pane">
-    <aside id="today-forecast">
-      <h2>Palos Verdes</h2>
-      <p id="temp">Temp: </p>
-      <p id="wind">Wind: </p>
-      <p id="humidity">Humidity: </p>
-    </aside>
-    <aside>
-      <h3>5-Day Forecast</h3>
-      <div>
-        <div id="day-1"></div>
-        <div id="day-2"></div>
-        <div id="day-3"></div>
-        <div id="day-4"></div>
-        <div id="day-5"></div>
-      </div>
-    </aside>
-  </section>
+  <main>
+    <section class="selection-pane">
+      <form class="search-form">
+        <h2>Search for a City</h2>
+        <input type="textarea" placeholder="San Diego">
+        <button class="search-button">Search</button>  
+      </form>
+      <button class="state-preset">Atlanta</button>
+      <button class="state-preset">Denver</button>
+      <button class="state-preset">Seattle</button>
+      <button class="state-preset">San Francisco</button>
+      <button class="state-preset">Orlando</button>
+      <button class="state-preset">New York</button>
+      <button class="state-preset">Chicago</button>
+      <button class="state-preset">Austin</button>
+    </section>
+    <section class="forecast-pane">
+      <aside class="today-forecast" id="today-forecast">
+        <h2>Palos Verdes</h2>
+        <p id="temp">Temp: </p>
+        <p id="wind">Wind: </p>
+        <p id="humidity">Humidity: </p>
+      </aside>
+      <aside class="week-forecast" id="week-forecast">
+        <h3>5-Day Forecast</h3>
+        <div class="forecast-tiles">
+          <div class="tiles" id="day-1">
+            <h4 class="day-1-date date">Date</h4>
+            <p class="emoji">Sun</p>
+            <p id="day-1-temp">Temp: </p>
+            <p id="day-1-wind">Wind: </p>
+            <p id="day-1-humidity">Humidity: </p>
+          </div>
+          <div class="tiles" id="day-2">
+            <h4 class="day-2-date date">Date</h4>
+            <p class="emoji">Sun</p>
+            <p id="day-2-temp">Temp: </p>
+            <p id="day-2-wind">Wind: </p>
+            <p id="day-2-humidity">Humidity: </p>
+          </div>
+          <div class="tiles" id="day-3">
+            <h4 class="day-3-date date">Date</h4>
+            <p class="emoji">Sun</p>
+            <p id="day-3-temp">Temp: </p>
+            <p id="day-3-wind">Wind: </p>
+            <p id="day-3-humidity">Humidity: </p>
+          </div>
+          <div class="tiles" id="day-4">
+            <h4 class="day-4-date date">Date</h4>
+            <p class="emoji">Sun</p>
+            <p id="day-4-temp">Temp: </p>
+            <p id="day-4-wind">Wind: </p>
+            <p id="day-4-humidity">Humidity: </p>
+          </div>
+          <div class="tiles" id="day-5">
+            <h4 class="day-5-date date">Date</h4>
+            <p class="emoji">Sun</p>
+            <p id="day-5-temp">Temp: </p>
+            <p id="day-5-wind">Wind: </p>
+            <p id="day-5-humidity">Humidity: </p>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
 <script src="Assets/script.js"></script>
 </body>
 </html>
